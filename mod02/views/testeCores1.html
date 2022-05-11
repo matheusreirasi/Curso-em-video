@@ -10,7 +10,7 @@
             height: 100%;
         }
         body {
-            background-image: linear-gradient(to bottom, #001c55, #dbd3ad);
+            background-image: linear-gradient(-90deg, #001c55, #dbd3ad 80%); /*posso usar quantas cores eu quiser para criar o degradê*/
             background-attachment: fixed;
         }
     </style>
@@ -23,6 +23,18 @@
     </h1>
     <p>
         No site principal do estudo de CSS o degradê funcionou sem problemas, mas aqui tive que fazer algumas modificações e mesmo assim não está tão certo quanto lá.
+    </p>
+    <h2>
+        Tags CSS desse site
+    </h2>
+    <p>
+        Tive que usar <code><ins>&lt;background-attachment: fixed&gt;</ins></code> para fazer o degradê ficar colado no fundo do site. Também foi usado como configuração global a altura de 100%, talvez nem fosse preciso já que eu coloquei o degradê colado no fundo.
+    </p>
+    <p>
+        <code><ins>&lt;background-image: linear-gradient()&gt;</ins></code> posso usar quantas cores eu quiser para criar o efeito monocromático. Quando for especificar a direção também é possível indicar utilizando posições como para direita, para esquerda, para cima ou para baixo, tudo em inglês. Quando usar medidas em graus, os valores vão até noventa e se eu quiser utilizar o degradê para ir pra uma posição oposta eu uso valores negativos. Por exemplo, para o degradê ir para a esquerda eu uso <code><ins>&lt;-90deg&gt;</ins></code> e para ir para a direita uso <code><ins>&lt;90deg&gt;</ins></code>.
+    </p>
+    <p>
+        Também é possível dizer qual será a cor que será mais vista em tela passando sua porcentagem logo depois do código da cor. Se nenhum valor for passado em todas as cores terão o mesmo tamanho.
     </p>
 </body>
 
