@@ -5,37 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de cores 1</title>
-    <style>
-        * { /* Tudo que está dentro do asterístico é considerado configuração global */
-            height: 100%;
-        }
-        body {
-            background-image: linear-gradient(-90deg, #001c55, #dbd3ad 80%); /*posso usar quantas cores eu quiser para criar o degradê*/
-            background-attachment: fixed;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 
 <body>
-    <h1>
-        Teste de cores
-    </h1>
-    <p>
-        No site principal do estudo de CSS o degradê funcionou sem problemas, mas aqui tive que fazer algumas modificações e mesmo assim não está tão certo quanto lá.
-    </p>
-    <h2>
-        Tags CSS desse site
-    </h2>
-    <p>
-        Tive que usar <code><ins>&lt;background-attachment: fixed&gt;</ins></code> para fazer o degradê ficar colado no fundo do site. Também foi usado como configuração global a altura de 100%, talvez nem fosse preciso já que eu coloquei o degradê colado no fundo.
-    </p>
-    <p>
-        <code><ins>&lt;background-image: linear-gradient()&gt;</ins></code> posso usar quantas cores eu quiser para criar o efeito monocromático. Quando for especificar a direção também é possível indicar utilizando posições como para direita, para esquerda, para cima ou para baixo, tudo em inglês. Quando usar medidas em graus, os valores vão até noventa e se eu quiser utilizar o degradê para ir pra uma posição oposta eu uso valores negativos. Por exemplo, para o degradê ir para a esquerda eu uso <code><ins>&lt;-90deg&gt;</ins></code> e para ir para a direita uso <code><ins>&lt;90deg&gt;</ins></code>.
-    </p>
-    <p>
-        Também é possível dizer qual será a cor que será mais vista em tela passando sua porcentagem logo depois do código da cor. Se nenhum valor for passado em todas as cores terão o mesmo tamanho.
-    </p>
+    <main>
+        <h1>
+            Teste de cores
+        </h1>
+        <p>
+            No site principal do estudo de CSS o degradê funcionou sem problemas, mas aqui tive que fazer algumas modificações e mesmo assim não está tão certo quanto lá.
+        </p>
+        <p>
+            Antes esse site estava com o css dentro do HTML e agora está em um arquivo separado. Com o CSS dentro do HTML estava dando erro e cada conteúdo dentro da tag era mostrado em uma página do site, para eu ver o resto do conteúdo eu tinha que descer a página. Agora todo o conteúdo aparece certinho, um embaixo do outro sem eu precisar descer. Esse problema apareceu porque eu defini altura para 100% e cada tag só era mostrada depois de eu rolar pra baixo de acordo com o tamanho da tela.
+        </p>
+
+        <!--Explicando as tags-->
+
+        <h2>
+            Tags CSS desse site
+        </h2>
+        <p>
+            Tive que usar <code><ins>&lt;background-attachment: fixed&gt;</ins></code> para fazer o degradê ficar colado no fundo do site. Também foi usado como configuração global a altura de 100%, talvez nem fosse preciso já que eu coloquei o degradê colado no fundo.
+        </p>
+        <p>
+            <code><ins>&lt;background-image: linear-gradient()&gt;</ins></code> posso usar quantas cores eu quiser para criar o efeito monocromático. Quando for especificar a direção também é possível indicar utilizando posições como para direita, para esquerda, para cima ou para baixo, tudo em inglês. Quando usar medidas em graus, os valores vão até noventa e se eu quiser utilizar o degradê para ir pra uma posição oposta eu uso valores negativos. Por exemplo, para o degradê ir para a esquerda eu uso <code><ins>&lt;-90deg&gt;</ins></code> e para ir para a direita uso <code><ins>&lt;90deg&gt;</ins></code>.
+        </p>
+        <p>
+            Também é possível dizer qual será a cor que será mais vista em tela passando sua porcentagem logo depois do código da cor. Se nenhum valor for passado em todas as cores terão o mesmo tamanho.
+        </p>
+        <br>
+        <p>
+            Na tag main eu usei:
+            <br>
+            <ul type="square">
+                <li>
+                    <code><ins>&lt;border-radius: 10px&gt;</ins></code> que faz com que as pontas dessa tag fiquem arredondadas, acho que normalmente se usa 10px.
+                </li>
+                <li>
+                    <code><ins>&lt;padding: 20px;
+                    </ins></code> da um espaçamento entre o fim da tag e a última palavra da linha
+                </li>
+                <li>
+                    <code><ins>&lt;margin: auto;&gt;</ins></code> no vídeo do Gustavo o conteúdo da página se adaptava de acordo com seu tamanho, no meu código somente deixou a tag main no centro da página.
+                </li>
+                <li>
+                    <code><ins>&lt;box-shadow: 10px 20px 20px 001c55aa;&gt;</ins></code> a sintaxe é: primeiro coloca o quanto a sombra se estende para a direita, depois o quanto ela se estende para baixo, depois o quanto ela se aprofunda e por último a cor. Eu alterei o código para deixar o azul mais transparente e não deixar uma sombra tão aparente, somente um detalhe.
+                </li>
+            </ul>
+
+            <p>
+                Dentro das tags <code><ins>&lt;li&gt;</ins></code> e <code><ins>&lt;p&gt;</ins></code> eu usei <code><ins>&lt;text-align: justify;&gt;</ins></code> pois faz parecer mais confortável para ler.
+            </p>
+        </p>
+    </main>
+
+    <footer>
+        <div>
+            <a href="./explanationColors.html">Site principal.</a>
+        </div>
+    </footer>
 </body>
 
 </html>
