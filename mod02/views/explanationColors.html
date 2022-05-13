@@ -6,9 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Módulo 2</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
         body {
             background-image: linear-gradient(to bottom, #001c559e, #dbd3ad);
         }
+        h1 {
+            font: bold 4em 'Tangerine';
+        }
+
+        p {
+            font: normal 0.8em 'Fira Code';
+        }
+
     </style>
 </head>
 
@@ -113,6 +125,81 @@
         Sempre é preferível colocar mais de uma opção de fonte no código caso ocorra algum problema de leitura do site. Além de colocar a fonte deve-se colocar também sua categoria de fonte no final para que o navegador possa escolher qual caligrafia usar baseada na categoria passada.
         <br>
         Acho que a fonte padrão do HTML é "Times New Roman".
+    </p>
+
+    <h3>
+        Altura das fontes
+    </h3>
+
+    <p>
+        As fontes possuem duas categorias de medidas: medidas absolutas e medidas relativas.
+        <br>
+        <ul>
+            <li>
+                Medidas absolutas: cm , mm, in, px, pt , pc
+                <br>
+                A medida pc é chamada de paica.
+            </li>
+            <li>
+                Medidas relativas: em, ex, rem, vw, vh, %
+                <br>
+                A medida rem é o tamanho da letra relativa a fonte que está configurada no body. A medida vw é relativo a viewport da largura e vh é relativo a viewport da altura.
+            </li>
+        </ul>
+    </p>
+    <p>
+        As medidas de cm e mm não devem ser usadas pois cada tela pode interpretar essa medida de um forma diferente.
+        <br>
+        O mesmo pode ser dito sobre px, onde algumas telas podem possuir tecnologia diferente em que um pixel não é de fato um pixel.
+        <br>
+        Ponto e paica são medidas de tipografia utilizada em papel, não deve ser usado em meio digital.
+    </p>
+    <p>
+        A recomendação da W3C é utilizar somente as medidas "px" e "em"
+    </p>
+    <p>
+        Por padrão as fontes tem tamanho 16px. 
+        <br>
+        1em é igual a 16px. Gustavo Guanabara recomenda usar "em" pois utiliza com porcentagem do tamanho padrão.
+    </p>
+
+    <h3>
+        Simplificando as fontes.
+    </h3>
+
+    <p>
+        Além de escolher qual tipo de fonte vai usar, é possível escolher também sua espessura, tamanho e estilo.
+        <ul>
+            <li>
+                <code><ins>&lt;font-weight&gt;</ins></code> : permite escolher a espessura da fonte. Os valores passados são: lighter, normal, bold e bolder. Não são todas as fontes que permitem todas essas opções.
+            </li>
+            <li>
+                <code><ins>&lt;font-size&gt;</ins></code> : altera o tamanho da fonte.
+            </li>
+            <li>
+                <code><ins>&lt;font-style&gt;</ins></code> : permite alterar o estilo da fonte. Os valores passados podem ser : italic, normal, oblique, initial, inherit.
+            </li>
+        </ul>
+    </p>
+
+    <p>
+        Para simplificar todos esses códigos e utilizá-los em somente uma linha existe a tag de CSS <code><ins>&lt;font:&gt;</ins></code> onde os valores passados depois do dois pontos seguem a ordem: font-style, font-weight, font-size, font-family.
+        <br>
+        Por exemplo: <code><ins>&lt;font:italic lighter 1.5em 'Work Sans',sans-serif</ins></code>
+    </p>
+    <p>
+        Essa facilidade de edição de fontes no CSS é chamada shorthand. É possível também deixar uma das tags vazias, ou seja, deixar de passar seu argumento, porém eu prefiro passar todos e se eu não quiser alterar nada daquela tag eu passo seu valor padrão, mas não o deixo vazio.
+    </p>
+
+    <h3>
+        Utilizando fontes externas
+    </h3>
+
+    <p>
+        O site do <a href="https://fonts.google.com/">Google Fontes</a> possui centenas de fontes para serem usadas nos sites.
+    </p>
+    <p>
+        Para usar é só escolher 
     </p>
 
     <hr>
