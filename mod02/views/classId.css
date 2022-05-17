@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body{
+    background-color: aquamarine;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    font-size: 3em;
+    color: blue;
+    text-align: center;
+}
+
+h1#segundoTitulo{
+    font-size: 2em;
+    text-align: left;
+}
+
+p{
+    text-align: justify;
+}
