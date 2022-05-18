@@ -17,5 +17,9 @@ p {
 }
 
 code {
-    font: normal 0.8em 'Fira Code', Arial, Helvetica, sans-serif;
+    font: normal 1em 'Fira Code', Arial, Helvetica, sans-serif;
+}
+
+.alterandoErroTamanho{
+    font-size: 0.8em;
 }

@@ -11,11 +11,25 @@ h1{
     text-align: center;
 }
 
-h1#segundoTitulo{
+#tituloPrincipal{
+    background-color: bisque;
+    color: black;
+    font-size: 3em;
+    border-radius: 20px;
+}
+
+.segundoTitulo{
     font-size: 2em;
     text-align: left;
 }
 
 p{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 30px;
+}
+
+.intro{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: justify;
 }
