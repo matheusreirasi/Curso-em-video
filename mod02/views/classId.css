@@ -33,3 +33,23 @@ p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: justify;
 }
+
+.explicacaoSubTitulo:hover > p {
+    display: none;
+}
+
+.explicacaoSubTitulo:hover > p{
+    display: block;
+    color: blueviolet;
+}
+
+
+
+code{
+    font-size: 1.1em;
+}
+
+code:hover{
+    color: blue;
+    font-size: 0.9em;
+}
