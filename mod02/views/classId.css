@@ -69,3 +69,7 @@ code:hover{
     color: blue;
     font-size: 0.9em;
 }
+
+.resumo {
+    font: normal 1em Arial, Helvetica, sans-serif;
+}
