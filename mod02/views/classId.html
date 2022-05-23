@@ -7,10 +7,26 @@
     <link rel="stylesheet" href="classId.css">
     <title>Diferença entre Class e Id</title>
 </head>
+    
+
+<body>
+
     <h1 id="tituloPrincipal">
         Estudo de Class e Id
     </h1>
 
+    <header>
+        <link rel="shortcut icon" href="../public/images/youtube-logo-transparent2.png" type="image/x-icon">
+        <a href="https://www.youtube.com/watch?v=zXfTjPrMC_0&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=20&t=626s" target="_blank">Gustavo Guanabara: Diferença entre Class e Id</a>
+        |
+        <a href="https://www.youtube.com/watch?v=WPtRX4n0UJs&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=21&t=700s" target="_blank">Gustavo Guanabara: Pseudo-classes</a>
+        |
+        <a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22&t=190s" target="_blank">Gustavo Guanabara: Pseudo-elementos</a>
+    </header>
+
+    <p>
+        Quero colocar o logo do youtube na frente dos links
+    </p>
     <p class="intro">
         Antes de começar deixarei logo destacado que na utilização de CSS, é possível simplificar a sintaxe do código simplesmente colocando hashtag(#) antes do nome do id criado no HTML e ponto (.) antes do nome da class criada no HTML.
     </p>
@@ -38,27 +54,39 @@
         Quando utilizar mais de uma classe na tag, e esse classe tiver algumas formatações iguais no arquivo CSS, então a prioridade será dada para a primeira classe passada dentro da tag e assim por diante. Se a primeira classe passada tiver <code><ins>&lt;font-size:3em&gt;</ins></code> e a segunda classe tiver <code><ins>&lt;font-size:1em&gt;</ins></code>, então a página terá uma fonte com tamanho de 3em.
     </p>
 
-    <h2>
-        Pseudo-classes
-    </h2>
-
-    <div class="explicacaoSubTitulo">
-        <p>
-            Uma pseudo-classe CSS é uma palavra adicionada às declarações de um seletor após um sinais de dois pontos (:) e especificam um estado especial de um elemento.
-            <br>
-            Existem várias pseudo-classes para estilos, como o ::before, ::after, ::first-letter, ::hover.
-        </p>
-        <p>
-            No caso dessa página eu criei dois seletores code no CSS, ambos genéricos, porém um deles contém uma pseudo-classe fazendo o código que aparece ná pagina ficar azul.
-            <br>
-            Eu havia tendado colocar ambos no mesmo seletor, sem passar nenhum id ou class, utilizando <code><ins>&lt;code:hover{}&gt;</ins></code>, porém a formatação somente acontecia quando eu passava o ponteiro em cima da palavra. No meu caso não é isso que eu esperava acontecer pois a parte contendo o código deve sempre ficar sempre com o mesmo tamanho de fonte.
-        </p>
+    <div class="tituloInterno">
+        <h2>
+            Pseudo-classes
+        </h2>
+        <div class="explicacaoSubTitulo">
+            <p>
+                Uma pseudo-classe CSS é uma palavra adicionada às declarações de um seletor após um sinais de dois pontos (:) e especificam um estado especial de um elemento.
+                <br>
+                No site da <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes" target="_blank">Mozilla</a> existem diversos exemplos.
+            </p>
+            <p>
+                No caso dessa página eu criei dois seletores code no CSS, ambos genéricos, porém um deles contém uma pseudo-classe fazendo o código que aparece ná pagina ficar azul.
+                <br>
+                Eu havia tendado colocar ambos no mesmo seletor, sem passar nenhum id ou class, utilizando <code><ins>&lt;code:hover{}&gt;</ins></code>, porém a formatação somente acontecia quando eu passava o ponteiro em cima da palavra. No meu caso não é isso que eu esperava acontecer pois a parte contendo o código deve sempre ficar sempre com o mesmo tamanho de fonte.
+            </p>
+        </div>
     </div>
-    <p>
-        Nessa parte da explicação tem um texto escondido, muito utilizado em menus que são mostradas somente ao passar o ponteiro por cima.
-        <br>
-        Eu tô tentando usar hover utilizando como seletor uma class porém não estou obtendo sucesso.
-    </p>
+
+    <div class="tituloInterno">
+        <h2>
+            Pseudo-elemento
+        </h2>
+        <div class="explicacaoSubTitulo">
+            <p>
+                Já um pseudo-elemento funciona de forma parecida com uma pseudo-classe, porém o pseudo-elemento é usado para formatação de um determinado espaço do elemento referenciado.
+                <br>
+                Outra diferença entre eles é seu código, onde este é acompanhado de dois dois pontos (::) e as pseudo-classes possuem somente um dois pontos (:).
+            </p>
+        </div>
+    </div>
+
+    <span style="font-size: 1.3em; text-decoration: underline;">Passar ponteiro encima dos sub-títulos acima.</span>
+
 
 
     <h1 class="segundoTitulo">
@@ -74,7 +102,23 @@
         No caso dessa página como exemplo, foi criado no CSS um seletor genérico colocando todo h1 centralizado no meio, um seletor id relacionado ao h1 não especificando a posição desse h1 e um outro seletor class também do h1 colocando o texto alinhado à esquerda. Com isso percebe-se que existe uma hierarquia dos seletores, onde primeiro será aplicado todos os estilos CSS passados dentro dos seletores personalizados (id e class) e depois será aplicado os estilos dos seletores genéricos (quando puder ser complementar àquele seletor personalizado).
     </p>
 
-<body>
+    <hr>
+
+    <h1 class="segundoTitulo">
+        Meus Erros
+    </h1>
+
+    <img src="../public/images/classIdHover.png" alt="PrintMyError" width="600px">
+    <img src="../public/images/classIdCSS.png" alt="ClassIdCSS" width="600px" >
+
+    <p>
+        Pela primeira vez entendi o motivo de usar a tag div dentro de outra div, serve justamente para poder criar uma organização de ações no CSS.
+        <br>
+        É por isso que dentro de uma única página possui uma div contendo dezenas de outras divs dentro.
+    </p>
+    <p>
+        Na foto de cima, eu não consegui criar o efeito de hover como está no site agora porque eu criava a interação somente com o parágrafo dentro da div e a tentativa de interação entre o titulo e os parágrafos não era possível pois eles não estavam "conectados".
+    </p>
     
 </body>
 

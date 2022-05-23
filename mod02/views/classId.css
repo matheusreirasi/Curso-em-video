@@ -11,6 +11,10 @@ h1{
     text-align: center;
 }
 
+header {
+    text-align: center;
+}
+
 #tituloPrincipal{
     background-color: bisque;
     color: black;
@@ -34,16 +38,28 @@ p{
     text-align: justify;
 }
 
-.explicacaoSubTitulo:hover > p {
+.tituloInterno > .explicacaoSubTitulo {
     display: none;
 }
 
-.explicacaoSubTitulo:hover > p{
+.tituloInterno:hover > .explicacaoSubTitulo {
     display: block;
     color: blueviolet;
+} 
+
+a {
+    color: blue;
+    text-decoration: none;
 }
 
+a:visited {
+    color: rgb(20, 137, 167);
+}
 
+a:hover {
+    color: rgb(3, 3, 94);
+    text-decoration: underline;
+}
 
 code{
     font-size: 1.1em;
