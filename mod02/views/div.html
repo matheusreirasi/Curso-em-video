@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+</head>
+
+
+<body>
+
+    <h1 class="mainTitle">
+        Organização do Site
+    </h1>
+
+    <div>
+        <p>
+            O modelo de caixas serve principalmente para organização da página. Esse modelo permite colocar um elemento dentro do outro, pois cada elemento mostrado na tela é representado dentro de uma caixa, e assim formar uma hierarquia de tags.
+        </p>
+
+        <p>
+            Toda box tem seu tamanho contendo seu conteúdo, e todo conteúdo possui um limite chamado de border (aqui é usado <code><ins>border-radius:</ins></code> para arredondar a borda do box). Entre o conteúdo e a border existe o padding para haver uma distância entre conteúdo e border.
+        </p>
+    </div>
+
+    <img src="../public/images/box-model.png" alt="BoxModel">
+
+    <div class="secondTitle">
+        <h1 class="secondTitle">
+            Box-level
+        </h1>
+
+        <p>
+            Uma caixa do tipo box-level é que ele ocupa toda a largura da tela (toda a viewport) e automaticamente é iniciada em outra linha
+        </p>
+        
+        <div class="example">
+            <p>
+                Exemplos de Box-level:
+            </p>
+            <ul>
+                <li>
+                    <code><ins>div</ins></code>
+                </li>
+                <li>
+                    <code><ins>main</ins></code>
+                </li>
+                <li>
+                    <code><ins>nav</ins></code>
+                </li>
+                <li>
+                    <code><ins>form</ins></code>
+                </li>
+                <li>
+                    <code><ins>video</ins></code>
+                </li>
+            </ul>
+        </div>
+
+        <h1 class="secondTitle">
+            Inline-level
+        </h1>
+
+        <p>
+            Uma caixa do tipo Inline-level é uma box menor, que ocupa a mesma linha do conteúdo anterior a ele e os próximos conteúdos após essa box Inline-level serão mostrados na mesma linha, junto com essa box Inline-level.
+            <br>
+        </p>
+
+        <p>
+            Esse tipo de box não ocupa toda a viewport da tela, somente a área necessária que ele necessita. Por isso é possível exibir conteúdo antes e depois dessa box.
+        </p>
+
+        <div>
+            <p>
+                Exemplos de Inline-level:
+            </p>
+
+            <ul>
+                <li>
+                    <code><ins>span</ins></code>
+                </li>
+                <li>
+                    <code><ins>em</ins></code>
+                </li>
+                <li>
+                    <code><ins>input</ins></code>
+                </li>
+                <li>
+                    <code><ins>button</ins></code>
+                </li>
+                <li>
+                    <code><ins>label</ins></code>
+                </li>
+                <li>
+                    <code><ins>select</ins></code>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
