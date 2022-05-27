@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="div.css">
     <title>Box Model</title>
 </head>
 
@@ -24,7 +25,7 @@
         </p>
     </div>
 
-    <img src="../public/images/box-model.png" alt="BoxModel">
+    <img src="../public/images/box-model.png" alt="BoxMod el">
 
     <div class="secondTitle">
         <h1 class="secondTitle">
@@ -96,6 +97,86 @@
                     <code><ins>select</ins></code>
                 </li>
             </ul>
+        </div>
+    </div>
+
+    <div class="secondTitle">
+        <h1 class="secondTitle">
+            Border
+        </h1>
+
+        <p>
+            Como estamos falando de modelo de caixas, nada mais importante que definir seu tamanho. E é aí que entra a edição das bordas das caixas.
+        </p>
+
+        <p>
+            Para deixar a borda com diferentes tipos, utilizamos o <code><ins>&lt;border-style&gt;</ins></code> e existem algumas que mais são usadas para o parâmetro como:
+        </p>
+        <ul>
+            <li>
+                solid: todas as bordas (esquerda, direita, superior e inferior) possuem a mesma medida e nenhum design especial.
+            </li>
+            <li>
+                dotted: as bordas da caixa são em formato de pequenas bolas.
+            </li>
+            <li>
+                inset: as bordas possuem um aspecto de moldura, onde as bordas esquerda e superior possuem uma cor e as bordas direita e inferior possuem outra cor.
+            </li>
+            <li>
+                doble: as bordas possuem duas linhas, uma interna e outra externa.
+            </li>
+        </ul>
+
+        <p>
+            Também é possível mesclar diferentes tipos de borda.
+            <br>
+            Para compreender melhor, acesse o site da <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style">Mozilla</a> para entender e fazer os testes com diferentes tipos de bordas.
+        </p>
+
+        <p>
+            Para a borda realmente aparecer é preciso colocar a cor da borda, sua espessura usando <code><ins>border-width</ins></code> e seu style. Sem esses três a borda não aparece na tela.
+        </p>
+
+        <p style="border: 5px dashed yellow ;">
+            O método mais eficiente de criar uma borda é utilizar o dentro da tag border os valores correspondentes de border-width, border-style e border-color.
+        </p>
+
+        <p style="outline: 15px dotted yellow; margin: 20px 40px">
+            A shorthand usada em border também pode ser usada em outline, seguindo o mesmo padrão.
+        </p>
+
+        <h1 class="secondTitle">
+            Padding
+        </h1>
+
+        <p class="padding">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, vel! Provident vel, neque ipsum accusamus eaque fugit tempore facere quo quos, sed minus iure labore voluptate nobis vero nihil omnis.
+        </p>
+
+        <p style="padding: auto;">
+            Padding é a distância entre o conteúdo e a borda.
+        </p>
+
+        <p class="padding">
+            É bom deixar uma pequeno padding caso seja necessário colocar alguma borda em volta do conteúdo, deixar sem qualquer edição de padding faz com que o conteúdo fica muito próximo da border e isso não é visualmente agradável.
+        </p>
+
+        <h1 class="secontTitle">
+            Margin
+        </h1>
+
+        <p class="margin">
+            Resumidamente falando, margin é a distância entre o padding de uma box até o padding de outra box. É o tamanho final da box.
+            <br>
+            A utilização de margem faz com que toda a box se movimente, o que não ocorre com padding e border, pois são alterados os estilos somente.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consequatur provident repudiandae, maiores doloribus perspiciatis amet reprehenderit modi est. Qui odit, libero ea molestias expedita temporibus recusandae id iste animi?
+        </p>
+
+        <div class="imagem">
+            Isso é uma imagem
         </div>
     </div>
 </body>

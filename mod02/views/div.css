@@ -1,2 +1,52 @@
 @charset "UTF-8";
 
+p {
+    background-color: aqua;
+    border-color: red;
+    border-style: solid;
+
+    margin: 15px auto;
+}
+
+.padding {
+    padding: 10px 20px 5px;
+}
+
+.margin {
+    margin-left: 20px;
+}
+
+.imagem {
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+
+
+    padding: 50px;
+
+    border-width: 30px ;
+    border-style: solid;
+    border-color: violet;
+    
+
+    margin: 100px auto;
+    margin-bottom: 100px;
+
+    outline-width: 15px;
+    outline-color: black;
+    outline-style: dashed;
+
+    
+}
+
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    color: red;
+    text-decoration: underline;
+    font-weight: lighter;
+    padding: 10px;
+}
