@@ -6,6 +6,8 @@ p {
     border-style: solid;
 
     margin: 15px auto;
+
+    text-indent: 30px;
 }
 
 .padding {
@@ -23,20 +25,23 @@ p {
 
 
     padding: 50px;
-
+    
     border-width: 30px ;
     border-style: solid;
     border-color: violet;
-    
+    /*
+    border: 30px solid violet;
+    */
 
     margin: 100px auto;
     margin-bottom: 100px;
-
-    outline-width: 15px;
-    outline-color: black;
-    outline-style: dashed;
-
     
+    outline-width: 15px;
+    outline-style:dashed;
+    outline-color: black;
+    /*
+    outline:15px dashed black
+    */
 }
 
 
