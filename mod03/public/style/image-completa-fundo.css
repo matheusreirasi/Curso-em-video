@@ -1,0 +1,14 @@
+body {
+    height: 97vh;
+    background-image: url("../images/wallpaper003.jpg");
+    background-position: center center;
+    background-clip: inherit;
+
+    width: 100vh;
+    
+}
+
+p {
+    color: violet;
+    text-align: center;
+}
