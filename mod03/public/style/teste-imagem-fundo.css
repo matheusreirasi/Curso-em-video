@@ -1,8 +1,7 @@
 body {
-    height: 97vh;
+    height: 95vh;
     background-image: url("../images/wallpaper003.jpg");
-    background-position: center center;
-    background-clip: inherit;
+    background-position: top center;
 
     width: 100vh;
     

@@ -1,0 +1,28 @@
+body {
+    height: 97vh;
+
+    /*
+    background-color: black;
+    background-image: url("../images/wallpaper002.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    */
+
+    background: black url("../images/wallpaper002.jpg") center center no-repeat fixed;
+    background-size: cover;
+
+}
+
+main {
+    background-color: white;
+    max-width: 700px;
+    margin: auto;
+    padding: 10px;
+    text-indent: 30px;
+
+    border: 2px solid black;
+    border-radius: 15px;
+
+}
